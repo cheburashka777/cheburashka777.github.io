@@ -1,0 +1,25 @@
+body {
+    color: white;
+    font-size: 14px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+td {
+    border: 2px solid rgb(9, 124, 18);
+}
+
+a {
+    color: rgb(192, 192, 192);
+}
+
+.back {
+    color: white;
+}
+
+.download {
+    padding: 2px 2px 2px 10px;
+}

@@ -1,0 +1,88 @@
+body {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.page_body_table {
+    max-width: 480px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+td p {
+    text-align: center;
+    font-size: 16px;
+}
+
+td {
+    border: 1px solid rgb(206, 206, 206);
+    background-color: white;
+}
+
+td a {
+    margin: 0px 5px;
+    font-size: 20px;
+}
+
+.podzagol {
+    background-color: forestgreen;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px dotted tomato;
+}
+
+.data {
+   font-style: italic;
+   text-align: right;
+   font-size: 12px;
+   margin-right: 5px;
+}
+
+.menu {
+    background-color: rgb(255, 253, 219);
+    text-align: center;
+}
+
+.page_body_table2 {
+    margin-top: 100px;
+}
+
+.menu_link {
+    color: blue;
+    text-align: center;
+}
+
+#end {
+    font-size: 16px;
+}
+
+#oldsite1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.titri {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+}
+
+@media all and (orientation:landscape) {
+    .page_body_table {
+        max-width: 768px;
+    }
+}
+    

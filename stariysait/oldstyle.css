@@ -1,0 +1,132 @@
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    display: block;
+}
+
+.fon {
+    background-image: url(favicon.ico) repeat;
+}
+
+#zagolovok {
+    text-align: center;
+    font-family: Arial;
+    margin-top: 30px;
+}
+
+#zagolovok2 {
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.otstup {
+    margin-top: 30px;
+}
+
+#zagolovok3 {
+    text-align: center;
+    font-family: Arial;
+    font-size: 25px;
+}
+
+.svyazkaMenu {
+    width: 150px;
+    margin-top: 100px;
+    margin-left: 130px;
+}
+
+.menuha {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.menu {
+    background-color: rgb(255, 253, 219);
+    border: red solid 2px;
+}
+
+.menu a {
+    display: block;
+    text-align: center;
+    font-family: arial;
+    margin: 15px;
+}
+
+.podgolov {
+    display: block;
+    text-align: center;
+    font-family: arial;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.titri {
+    font-family: arial;
+    text-align: center;
+    color: gray;
+    margin-top: 300px;
+}
+
+.titri2 {
+    font-family: arial;
+    text-align: center;
+    color: gray;
+    margin-top: 700px;
+}
+
+.podgolov2 {
+    display: block !important;
+    text-align: center !important;
+    font-family: arial !important;
+    margin-top: 25px !important;
+    font-size: 20px !important;
+}
+
+.back {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+
+.back a {
+    color: white;
+    text-decoration: none;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+.screenAnti {
+    margin: 50px;
+}
+
+.galereya {
+    margin-left: 150px;
+    margin-bottom: 100px;
+    margin-top: 25px;
+}
+
+.screenAnti {
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    .svyazkaMenu {
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+    }
+}
