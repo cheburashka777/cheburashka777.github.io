@@ -150,13 +150,13 @@ td {
     text-align: left;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     .menu2 {
         display: none;
     }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 767px) {
     .menu {
         display: none;
     }
