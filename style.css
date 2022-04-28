@@ -149,6 +149,14 @@ td {
     text-align: left;
 }
 
+.youtube-vid {
+    width: 90%;
+}
+
+.post-image {
+    width: 90%;
+}
+
 @media screen and (min-width: 768px) {
     .menu2 {
         display: none;
