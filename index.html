@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body background="hranilishe/background.jpg">
+
 <script type="text/javascript">
     var _tmr = window._tmr || (window._tmr = []);
     _tmr.push({id: "3242481", type: "pageView", start: (new Date()).getTime()});
@@ -22,6 +23,8 @@
 </script><noscript><div>
 <img src="https://top-fwz1.mail.ru/counter?id=3242481;js=na" style="border:0;position:absolute;left:-9999px;" alt="Top.Mail.Ru" />
 </div></noscript>
+
+<div id="bodyDate">Сегодня:<br><span id="bodyDateText">ПЯТНИЦА!!!</span></div>
 
 <center><table cellpadding="2">
         <tr>
@@ -89,13 +92,13 @@
             <img src="hranilishe/logo.png" align="right" width="64px">
             <p>Это просцецкий сайт <span id="age">13</span> летнего школьника. Слева находятся ссылки на мои контакты. Там же - кнопка на старую версию сайта (типо архив). Сижу за компом с 4 лет, вот и вырос такой умненький)))</p>
             <h2>Обо мне</h2>
-            <p>Как говорилось выше, мне <span id="age">13</span> лет. Я хожу в чюпырнадцатую шкАлу и живу в Нижневартовске.<br>Увлекаюсь программированием, монтажём, рисованием всего, что вижу и 3D-моделированием. Разносторонний, короче)))<br>Ну вроде всё.</p>
+            <p>Как говорилось выше, мне 14 лет. Я хожу в чюпырнадцатую шкАлу и живу в Нижневартовске.<br>Увлекаюсь программированием, монтажём, рисованием всего, что вижу и 3D-моделированием. Разносторонний, короче)))<br>Ну вроде всё.</p>
             <center><img src="hranilishe/logo_name.png" width="90%"></center>
             <br>
             <p>Это мой крутой логотип.</p>
             <br>
             <a href="osnova/news.html" class="othernews">Новости</a>
-            <button onclick="ChatPerehod()" class="othernews" style="float: left;">Чатик</button>
+            <a onclick="ChatPerehod()" class="othernews" style="float: left;">Чатик</a>
             <br>
             <br>
             <br>
@@ -121,23 +124,12 @@
             window.open('http://neonarod.com/chat_t.php?id=662','Чатик','width=420, height=420')
         }
 
-        var today = new Date();
-        var bday = new Date('15 August 2008');
-        var years = today - bday;
-        document.getElementById('age').innerHTML = new Date(years).getFullYear() - 1970;
+    var today = new Date();
+    var bday = new Date(`16 August 2008`);
+    var years = today - bday;
+    document.getElementById(`age`).innerHTML = new Date(years).getFullYear() - 1970;
 
-    
-        function Zvuk() {
-        var audio = new Audio(); // Создаём новый элемент Audio
-        audio.src = 'osnova/muzon.ogg'; // Указываем путь к звуку
-        audio.autoplay = true; // Автоматически запускаем
-    }
-
-        function Zvuk2() {
-        var audio = new Audio(); // Создаём новый элемент Audio
-        audio.src = 'osnova/muzon2.ogg'; // Указываем путь к звуку "клика"
-        audio.autoplay = true; // Автоматически запускаем
-    }
+        document.getElementById('bodyDateText').innerHTML = new Date().getDate() + " " + new Date().toLocaleString('default', { month: 'long' }) + " " + new Date().getFullYear() + " года" + "<br>" + "";
     </script>
 </body>
 </html>
