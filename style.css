@@ -3,9 +3,17 @@ body {
     font-size: 14px;
 }
 
+body::selection {
+    color: red;
+    background-color: black;
+}
+
 a {
-    color: black;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 h1 {
@@ -30,6 +38,24 @@ td {
     border: 1px solid rgb(206, 206, 206);
 }
 
+.link img, .jab img {
+    margin-right: 5px;
+}
+
+.jab {
+    color: blue;
+    display: inline;
+}
+
+.jab:hover {
+    text-decoration: underline;
+    cursor: default;
+}
+
+.punkt img {
+    margin-right: 5px;
+}
+
 .podzagol {
     background-color: forestgreen;
     text-align: center;
@@ -46,6 +72,27 @@ td {
    margin-right: 5px;
 }
 
+.mobpost::before {
+    content: attr(Ttitle);
+    position: absolute;
+    margin: -30px 0 0 -160px;
+    z-index: 1;
+    background: rgb(247, 247, 247);
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid rgb(170, 170, 170);
+    font-style: normal;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.mobpost:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
 .menu, .menu2 {
     background-color: rgb(255, 253, 219);
 }
@@ -53,14 +100,6 @@ td {
 .page_body_table2 {
     margin: auto;
     width: 800px;
-}
-
-#menu_link {
-    color: blue;
-}
-
-#link1 {
-    color: blue !important;
 }
 
 #end {
@@ -89,6 +128,12 @@ td {
     float: right;
     background-color: white;
     text-align: center;
+    cursor: pointer;
+    color: black;
+}
+
+.othernews:hover {
+    text-decoration: none;
 }
 
 .player {
@@ -116,10 +161,6 @@ td {
     text-align: center;
     padding-bottom: 5px;
     color: blue;
-}
-
-.link {
-    vertical-align: middle;
 }
 
 .multik {
@@ -162,13 +203,29 @@ td {
     position: fixed;
     right: 0;
     top: 0;
-    width: 125px;
+    width: 150px;
     background-color: white;
     padding: 5px;
     border-left: solid 1px black;
     border-bottom: solid 1px black;
     box-sizing: border-box;
 }
+
+.dvoetochie {
+    animation: dvoetochie 1s cubic-bezier(1, 0, 1, 0) infinite;
+}
+
+@keyframes dvoetochie {
+    0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }  
+} 
 
 @media screen and (min-width: 768px) {
     .menu2 {
