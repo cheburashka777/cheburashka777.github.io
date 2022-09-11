@@ -14,6 +14,11 @@ td {
 
 a {
     color: rgb(192, 192, 192);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .back {
@@ -21,5 +26,5 @@ a {
 }
 
 .download {
-    padding: 2px 2px 2px 10px;
+    padding: 2px 2px 5px 10px;
 }

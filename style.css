@@ -93,7 +93,7 @@ td {
     visibility: visible;
 }
 
-.menu, .menu2 {
+.menuPC, .menumobile {
     background-color: rgb(255, 253, 219);
 }
 
@@ -187,7 +187,7 @@ td {
     margin-bottom: 10px;
 }
 
-.menu2 .punkt {
+.menuPC .punkt {
     text-align: left;
 }
 
@@ -218,27 +218,27 @@ td {
 @keyframes dvoetochie {
     0% {
         opacity: 0;
-      }
-      50% {
+    }
+    50% {
         opacity: 1;
-      }
-      100% {
+    }
+    100% {
         opacity: 0;
-      }  
+    }  
 } 
 
 @media screen and (min-width: 768px) {
-    .menu2 {
+    .menuPC {
         display: none;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .menu {
+    .menumobile {
         display: none;
     }
 
-    .menu2 {
+    .menuPC {
         display: table-cell;
     }
 
