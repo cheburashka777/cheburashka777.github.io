@@ -1,9 +1,12 @@
 body {
     font-family: Tahoma, Arial, Helvetica, sans-serif;
     font-size: 14px;
+    /* background: url(hranilishe/NY_background.png);
+    background-repeat: repeat-x;
+    background-color: #edf2fe; */
 }
 
-body::selection {
+*::selection {
     color: red;
     background-color: black;
 }
@@ -187,7 +190,7 @@ td {
     margin-bottom: 10px;
 }
 
-.menuPC .punkt {
+.menumobile .punkt {
     text-align: left;
 }
 
@@ -215,6 +218,10 @@ td {
     animation: dvoetochie 1s cubic-bezier(1, 0, 1, 0) infinite;
 }
 
+.poster {
+    background: url(hranilishe/posterBackground.png) no-repeat;
+}
+
 @keyframes dvoetochie {
     0% {
         opacity: 0;
@@ -228,21 +235,20 @@ td {
 } 
 
 @media screen and (min-width: 768px) {
-    .menuPC {
+    .menumobile {
         display: none;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .menumobile {
+    .menuPC {
         display: none;
     }
 
-    .menuPC {
+    .menumobile {
         display: table-cell;
     }
 
-    
     #bodyDate {
         opacity: .3;
         transition: all .3s;
