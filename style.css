@@ -220,6 +220,7 @@ td {
 
 .poster {
     background: url(hranilishe/posterBackground.png) no-repeat;
+    background-position: center top;
 }
 
 @keyframes dvoetochie {
